@@ -1,12 +1,19 @@
 # IA_PARA_DEVS_FASE1
 
-# Diabetes Prediction using Machine Learning
+## Tema Escolhido
+### Pré-triagem de pacientes do sexo feminino: classificação entre diabéticas e não diabéticas
 
 ## Visão Geral do Projeto
 
 Este projeto tem como objetivo desenvolver um modelo de Machine Learning capaz de prever se um paciente possui diabetes com base em dados clínicos.
 
 O sistema foi projetado para apoiar profissionais de saúde na detecção precoce da doença e na melhoria da eficiência do processo de triagem. É importante destacar que esta ferramenta não substitui o diagnóstico médico, atuando apenas como um sistema de apoio à decisão.
+
+---
+
+##  Identificação do problema
+
+Em ambientes hospitalares e clínicos, o grande volume de pacientes e exames torna o processo de triagem inicial mais demorado e suscetível a falhas humanas. Diante desse cenário, este projeto propõe o uso de técnicas de Machine Learning para auxiliar na análise inicial de dados clínicos estruturados, identificando padrões que indiquem a presença de diabetes. O principal desafio consiste em desenvolver um modelo eficiente que minimize falsos negativos, ou seja, casos em que pacientes diabéticas não são corretamente identificadas.
 
 ---
 
@@ -50,6 +57,30 @@ As seguintes etapas de pré-processamento foram aplicadas:
 * Imputação de dados utilizando a mediana
 * Padronização das variáveis com StandardScaler
 * Utilização de pipeline para garantir consistência e evitar vazamento de dados
+
+---
+
+## Análise da Distribuição das Variáveis
+
+Na análise da distribuição das variáveis, foram gerados histogramas acompanhados de curvas de densidade (KDE) para todas as variáveis numéricas do dataset. Essa abordagem permite avaliar a forma das distribuições, identificando se os dados apresentam comportamento simétrico ou assimétrico, além de facilitar a detecção de outliers e de possíveis valores inconsistentes. A visualização também contribui para uma melhor compreensão do comportamento das variáveis clínicas, evidenciando padrões, concentrações e dispersões dos dados. Essa etapa é essencial para orientar decisões de pré-processamento e assegurar maior qualidade na etapa de modelagem.
+
+Estas análises orientam decisões de **pré-processamento**, como normalização, transformação de variáveis e tratamento de valores ausentes.
+
+---
+
+## Proporção de Diabéticos e Não Diabéticos
+
+Foi criado um gráfico de barras para analisar o balanceamento da variável alvo (*Outcome*), exibindo:
+- Quantidade absoluta de pacientes diabéticas e não diabéticas
+- Percentual correspondente a cada classe
+
+Essa visualização permite identificar desbalanceamentos que podem impactar o desempenho dos modelos e justificar técnicas adicionais durante a modelagem.
+
+---
+
+## Mapa de Calor de Correlação
+
+Foi gerado um mapa de calor de correlação (heatmap) baseado no coeficiente de Pearson com o objetivo de analisar a relação linear entre todas as variáveis numéricas do dataset. Essa visualização permite identificar o grau de associação entre os atributos, avaliar possíveis casos de multicolinearidade e compreender como cada variável se relaciona com o desfecho do problema (Outcome). A análise de correlação contribui para a seleção e interpretação das variáveis mais relevantes, apoiando decisões importantes na etapa de modelagem.
 
 ---
 
