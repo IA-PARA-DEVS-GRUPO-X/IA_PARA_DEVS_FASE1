@@ -186,11 +186,6 @@ pip install pandas numpy scikit-learn matplotlib seaborn shap
 
 ---
 
-## Autor
-
-Seu Nome Aqui
-
----
 
 ## Considerações Finais
 
