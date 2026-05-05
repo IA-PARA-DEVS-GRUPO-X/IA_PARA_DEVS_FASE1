@@ -182,25 +182,10 @@ pip install pandas numpy scikit-learn matplotlib seaborn shap
 
 ### Execução do projeto
 
-```bash
 
 
 ---
 
-## Docker (opcional)
-
-```bash
-docker build -t diabetes-ml .
-docker run diabetes-ml
-```
-
----
-
-## Autor
-
-Seu Nome Aqui
-
----
 
 ## Considerações Finais
 
